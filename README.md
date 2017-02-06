@@ -1,6 +1,6 @@
 # couchbasemap
 
-Represents redis as a clojure persistent map.
+Represents a couchbase bucket as a clojure persistent map.
 Note! The bucket used for the map must have a view called allkeys for it to work.
 Like this:
 ```javascript
