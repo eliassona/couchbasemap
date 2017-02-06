@@ -1,6 +1,15 @@
 # couchbasemap
 
-A Clojure library designed to ... well, that part is up to you.
+Represents redis as a clojure persistent map.
+Note! The bucket used for the map must have a view called allkeys for it to work.
+Like this:
+```javascript
+function (doc, meta) {
+  if(meta.type == "json") {
+     emit(null);
+  }
+}
+```
 
 ## Usage
 
